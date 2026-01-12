@@ -1,13 +1,17 @@
 
 import { TopNav } from "../components/layout/topNav";
+import { InfoCard } from "../components/infoCard";
+
+import cardData from "../components/cardData.json";
 
 export default function Home() {
+
   return (
     <div>
         <TopNav/>
         <div>You can close the other applicants portfolios' now</div>
-        <p>Hey! I'm Patrick Dowd, a gradute software enginner</p>
-        <div>What can i do?</div>
+        <p>Hey! I'm Patrick Dowd, a gradute software enginner. Put the rest of the blurb here</p>
+        <div>My projects/abilities/skills</div>
         <ul>
           <li>Ci/cd pipeline</li>
           <li>Make games <a href="/polarity"> </a></li>
@@ -29,6 +33,11 @@ export default function Home() {
           <li>Familiar with cyber security priciples </li>
           <li>cloud computing fundamentals </li>
         </ul>
+        <br />
+
+        <div className="gridArea">
+          {cardData.infoList.map((item) => (<InfoCard  data={item} key={item.title}></InfoCard>))}   
+        </div>
   </div>
   );
 }

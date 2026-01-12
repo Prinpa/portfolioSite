@@ -10,14 +10,58 @@ body {
   height: 40pt;
   display: flex;
   align-items: center;
-
-  
 }
 
 .navbar-item {
   margin-left: 10;
   margin-right: 10;
-
-
-  
 }
+
+
+.holdings{
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  align-items: center;
+}
+
+.gridArea{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: dodgerblue;
+  width: 85%;
+  height: 400px;
+  gap: 10px;
+  margin: auto;
+}
+
+
+.gridArea div{
+  background-color: white;
+  color: green;
+
+  border-radius: 6px;
+  height: 60px;
+  transition: all 1s ease;
+}
+
+.gridArea div:hover{
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: -20px;
+  margin-bottom: 20px;
+
+}
+
+
+
+@keyframes aniTest {
+
+
+  100% {
+    margin-left: 50px;
+
+  }
+}
+
+
+

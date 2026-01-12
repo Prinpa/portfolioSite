@@ -1,0 +1,21 @@
+{
+    "infoList": 
+    [
+        {
+            "title": "Polarity", 
+            "urlTitle": "polarity"
+        },
+        {
+            "title": "CI/CD pipeline",
+            "urlTitle": "pipelines"
+        },
+        {
+            "title": "Front-end work",
+            "urlTitle": "frontend"
+        },
+        {
+            "title": "Back-end work",
+            "urlTitle": "backend"
+        }
+    ]
+}
